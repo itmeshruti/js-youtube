@@ -26,3 +26,24 @@ let myObj = {
 const myFunc = function(){
     console.log("Hello World");
 }
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// Memory +++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Primitive) Heap(Non Primitive)
+
+let myName = "Shruti"
+let herName = myName
+herName = "Shreya"
+console.log(myName)
+console.log(herName)
+
+let userOne = {
+    email:"user@google.com",
+    upi:"user@paytm"
+}
+let userTwo = userOne
+userTwo.email="hitesh@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
